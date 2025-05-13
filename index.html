@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-input">
+        <p><sup>___</sup> Sticky Task <sup>___</sup></p>
+        <div class="input-card">
+          <input type="text" id="title" placeholder="task title" />
+          <textarea name="" id="textarea" placeholder="task info"></textarea>
+          <button class="btn" id="btn">Add Sticky</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky-container">
+      <div class="sticky-body">
+        <div class="sticky-body-header">
+          <p>Tasks Number: <span id="taskNum"></span></p>
+          <p class="sticky-board-hero">Sticky board</p>
+          <button class="deleteBtn" id="deleteAllBtn">Delete all</button>
+        </div>
+        <div class="sticky-board">
+          <div class="stickies">
+            <div class="sticky-card" id="stickyCard">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
