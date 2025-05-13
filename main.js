@@ -117,41 +117,40 @@ btn.addEventListener("click", () => {
               });
             });
 
-            // Delete task
-            deleteAllBtn.addEventListener("click", () => {
-              if (confirm("Are you sure you want to delete all tasks?")) {
-                fetch("https://68219a2d259dad2655afc2ba.mockapi.io/tasks")
-                  .then((response) => response.json())
-                  .then((tasks) => {
-                    const deletePromises = tasks.map((task) =>
-                      fetch(
-                        `https://68219a2d259dad2655afc2ba.mockapi.io/tasks/${task.id}`,
-                        {
-                          method: "DELETE",
-                        }
-                      )
-                    );
-                    return Promise.all(deletePromises);
-                  })
-                  .then(() => {
-                    document.getElementById("stickyCard").innerHTML = ""; 
-                    alert("All tasks have been removed.");
-                  })
-                  .catch((error) =>
-                    console.error("Error deleting tasks:", error)
-                  );
-              }
-            });
-
+            
             // deleteAllBtn.addEventListener("click", () => {
-            //   fetch(`https://68219a2d259dad2655afc2ba.mockapi.io/tasks/`, {
-            //     method: "DELETE",
-            //   }).then(() => {
-            //     sticky.remove();
-            //     taskNum.innerHTML = 0;
-            //   });
-            // });
-          });
+                //   fetch(`https://68219a2d259dad2655afc2ba.mockapi.io/tasks/`, {
+                    //     method: "DELETE",
+                    //   }).then(() => {
+                        //     sticky.remove();
+                        //     taskNum.innerHTML = 0;
+                        //   });
+                        // });
+                    });
+                });
+            });
         });
-    });
-});
+        
+        // Delete task
+        deleteAllBtn.addEventListener("click", () => {
+          if (confirm("Are you sure you want to delete all tasks?")) {
+            fetch("https://68219a2d259dad2655afc2ba.mockapi.io/tasks")
+              .then((response) => response.json())
+              .then((tasks) => {
+                const deletePromises = tasks.map((task) =>
+                  fetch(
+                    `https://68219a2d259dad2655afc2ba.mockapi.io/tasks/${task.id}`,
+                    {
+                      method: "DELETE",
+                    }
+                  )
+                );
+                return Promise.all(deletePromises);
+              })
+              .then(() => {
+                document.getElementById("stickyCard").innerHTML = ""; 
+                alert("All tasks have been removed.");
+                 taskNum.innerHTML = 0;
+              })
+          }
+        });
