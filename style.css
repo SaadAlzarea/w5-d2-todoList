@@ -44,11 +44,14 @@
       height: 5vh;
       border-style: none;
       border-radius: 5px;
+      color: white;
+
       background-color: rgb(93, 93, 255);
     }
   }
   .btn:hover {
     background-color: rgb(35, 35, 254);
+    color: white;
   }
   .input-card {
     width: 50%;
@@ -383,7 +386,6 @@
     justify-content: center;
     align-items: center;
     gap: 7vh;
-    
 
     /* border: 1px solid rgb(0, 0, 0); */
   }
@@ -518,10 +520,11 @@
   }
   .sticky-card {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
     /* gap: 2%; */
   }
   .done-btn {
+    color: white;
     height: 4vh;
     width: 25%;
     border-radius: 5px;
@@ -529,6 +532,7 @@
     background: #27ff5d;
   }
   .edit-btn {
+    color: white;
     height: 4vh;
     width: 25%;
     border-radius: 5px;
@@ -536,6 +540,7 @@
     background: #eeff69;
   }
   .delete-btn {
+    color: white;
     height: 4vh;
     width: 25%;
     border-radius: 5px;
