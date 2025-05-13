@@ -233,10 +233,12 @@
       border-style: none;
       border-radius: 5px;
       background-color: rgb(93, 93, 255);
+      color: white;
     }
   }
   .btn:hover {
     background-color: rgb(35, 35, 254);
+    color: white;
   }
   .input-card {
     width: 100%;
@@ -337,6 +339,8 @@
     /* gap: 2%; */
   }
   .done-btn {
+    color: white;
+
     height: 4vh;
     width: 25%;
     border-radius: 5px;
@@ -344,6 +348,8 @@
     background: #27ff5d;
   }
   .edit-btn {
+    color: white;
+
     height: 4vh;
     width: 25%;
     border-radius: 5px;
@@ -351,6 +357,8 @@
     background: #eeff69;
   }
   .delete-btn {
+    color: white;
+
     height: 4vh;
     width: 25%;
     border-radius: 5px;
@@ -419,10 +427,14 @@
       border-style: none;
       border-radius: 5px;
       background-color: rgb(93, 93, 255);
+          color: white;
+
     }
   }
   .btn:hover {
     background-color: rgb(35, 35, 254);
+        color: white;
+
   }
   .input-card {
     width: 50%;
